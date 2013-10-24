@@ -25,7 +25,11 @@
         "node": ">= 0.8.0"
     },
     "scripts": {
-        "test": "grunt test"
+        "test": "grunt test",
+        "postinstall": "coffee -o ./tasks -c ./src"
+    },
+    "dependencies": {
+        "coffee-script": "~1.6.3"
     },
     "devDependencies": {
         "grunt-contrib-nodeunit": "~0.1.2",
